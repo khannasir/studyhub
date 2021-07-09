@@ -1,0 +1,515 @@
+<?php
+include('../conn.php');
+session_start();
+$id=$_SESSION['id'];
+// session_destroy();
+if(isset($_POST['te'])){
+	$te=$_POST['te'];	
+}
+if(isset($_POST['t1'])){
+	$t1=$_POST['t1'];	
+}
+if(isset($_POST['t2'])){
+	$t2=$_POST['t2'];	
+}
+if(isset($_POST['t3'])){
+	$t3=$_POST['t3'];	
+}
+if(isset($_POST['t4'])){
+	$t4=$_POST['t4'];	
+}
+if(isset($_POST['t5'])){
+	$t5=$_POST['t5'];	
+}
+if(isset($_POST['t6'])){
+	$t6=$_POST['t6'];	
+}
+if(isset($_POST['t7'])){
+	$t7=$_POST['t7'];	
+}
+if(isset($_POST['t8'])){
+	$t8=$_POST['t8'];	
+}
+if(isset($_POST['t9'])){
+	$t9=$_POST['t9'];	
+}
+if(isset($_POST['t10'])){
+	$t10=$_POST['t10'];	
+}
+if(isset($_POST['t11'])){
+	$t11=$_POST['t11'];	
+}
+if(isset($_POST['t12'])){
+	$t12=$_POST['t12'];	
+}
+if(isset($_POST['t13'])){
+	$t13=$_POST['t13'];	
+}
+if(isset($_POST['t14'])){
+	$t14=$_POST['t14'];	
+}
+if(isset($_POST['t15'])){
+	$t15=$_POST['t15'];	
+}
+if(isset($_POST['t16'])){
+	$t16=$_POST['t16'];	
+}
+if(isset($_POST['t17'])){
+	$t17=$_POST['t17'];	
+}
+if(isset($_POST['t18'])){
+	$t18=$_POST['t18'];	
+}
+if(isset($_POST['t19'])){
+	$t19=$_POST['t19'];	
+}
+if(isset($_POST['t20'])){
+	$t20=$_POST['t20'];	
+}
+if(isset($_POST['t21'])){
+	$t21=$_POST['t21'];	
+}
+if(isset($_POST['t22'])){
+	$t22=$_POST['t22'];	
+}
+if(isset($_POST['t23'])){
+	$t23=$_POST['t23'];	
+}
+if(isset($_POST['t24'])){
+	$t24=$_POST['t24'];	
+}
+if(isset($_POST['t25'])){
+	$t25=$_POST['t25'];	
+}
+$skip=0;
+$correct=0;
+$wrong=0;
+$totalQusetion = 25;
+if(isset($_POST['n']))
+{
+
+	if(isset($t1))
+	{
+		if($t1=="A")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+  
+	if(isset($t2))
+	{
+		if($t2=="D")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+	
+
+	if(isset($t3))
+	{
+		if($t3=="B")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+	if(isset($t4))
+	{
+		if($t4=="C")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+	
+	if(isset($t5))
+	{
+		if($t5=="A")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+   
+   if(isset($t6))
+	{
+		if($t6=="D")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+	
+	if(isset($t7))
+	{
+		if($t7=="B")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+ 	
+ 	if(isset($t8))
+	{
+		if($t8=="C")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+	
+	if(isset($t9))
+	{
+		if($t9=="C")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+ 	
+ 	if(isset($t10))
+	{
+		if($t10=="B")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+	
+	if(isset($t11))
+	{
+		if($t11=="A")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+	
+if(isset($t12))
+	{
+		if($t12=="D")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+
+	if(isset($t13))
+	{
+		if($t13=="D")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+ 
+ 
+ if(isset($t14))
+	{
+		if($t14=="B")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+	if(isset($t15))
+	{
+		if($t15=="C")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+
+	if(isset($t16))
+	{
+		if($t6=="C")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+
+	if(isset($t17))
+	{
+		if($t17=="D")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+ 
+
+ 	if(isset($t18))
+	{
+		if($t18=="D")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+
+	if(isset($t19))
+	{
+		if($t19=="B")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+
+  if(isset($t20))
+	{
+		if($t20=="D")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+
+	if(isset($t21))
+	{
+		if($t21=="C")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+
+  if(isset($t22))
+	{
+		if($t22=="D")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+	if(isset($t23))
+	{
+		if($t23=="C")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+
+if(isset($t24))
+	{
+		if($t24=="B")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+
+
+	if(isset($t25))
+	{
+		if($t25=="B")
+		{
+		  $correct++;
+		}
+		else
+		{
+			$wrong++;
+		}
+	}
+	else
+	{
+		$skip++;
+	}
+   
+}
+else
+{
+	
+}	
+	$totalQusetion = 25;
+	$total=$correct;
+	$to=$totalQusetion-$skip;
+	$skip;
+$q="insert into result(name,atampp,skip,correct,wrong,total) values('$id','$to','$skip','$correct','$wrong','$total')";
+mysqli_query($conn,$q);
+
+?>
